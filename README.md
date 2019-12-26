@@ -25,7 +25,9 @@ Xcode11下 这个目录不存在了
 #### ~~友盟相关~~ `升级最新版本SDK`
 ##### ~~注册新浪平台 崩溃【验证：仅在模拟器上出现】~~
 这个应该是需要微博官方进行适配了，尝试模拟了 `getUniqueStrByUUID` 中的相关写法。
+
 ![屏幕快照2019-06-05下午1.47.08.png](https://upload-images.jianshu.io/upload_images/2120742-600e04ba19dee57d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 * 暂时的解决方案：
 ```
 //修复iOS13下 崩溃问题 验证为：模拟器下出现
@@ -540,6 +542,7 @@ gesture.cancelsTouchesInView = YES;
 gesture.delaysTouchesBegan = YES;
 ```
 * 先看一下相关调用栈
+
 ![单击UITextView.png](https://upload-images.jianshu.io/upload_images/2120742-a2551ab17feee00c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![iOS12下拖动UITextView.png](https://upload-images.jianshu.io/upload_images/2120742-54feac8ebc68bbf0?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -1165,9 +1168,11 @@ if(self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityUna
 
 ###### 配置及结构
 * 为什么iOS13 横屏会不显示状态栏？
+
 ![默认配置.png](https://upload-images.jianshu.io/upload_images/2120742-e681a7f3fe35f1ce?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 状态栏层级结构
+
 ![状态栏层级结构.png](https://upload-images.jianshu.io/upload_images/2120742-6ab49928229e1c93?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ###### 私有方法挖掘
